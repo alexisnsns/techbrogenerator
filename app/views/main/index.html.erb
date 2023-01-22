@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+
+<html>
+
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>TechBro generator</title>
+</head>
+
+<body>
+
+<div class= "box">
+    <p style="text-align:center" id="quote"></p>
+    <br>
+    <button id="button" onclick="changeColor()">More BS</button>
+<%= image_tag "techbro.png", id:"techbro" %>
+<%= image_tag "bullebd.png", id:"bullebd"  %>
+</div>
+<div id="bg"></div>
+
+
+<div id="twitter">
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="TechBro" data-show-count="false">Tweet</a>
+</div>
+
+<div id="github">
+<a href="https://github.com/alexisnsns" target="_blank" class="fa fa-github" ></a>
+</div>
+
+<p id="v_line"> </p>
+
+
+</body>
+
+</html> 
+
+<script 
+async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+
+<script>
+function changeColor(){
+    var compliments = ["Let me chat with my team and circle back.", "The algorithms won't keep me from meeting the love of my life.", "Just wait until the next halving dude.", "To the Moon!", "Next cycle, the alts are going to moon.", "1 bitcoin = 1 bitcoin.", "SF is dead.", "I love climbing.", "I pivoted from Web3 to AI.", "He left the polycule.", "Did you see Elon's latest tweet?", "I'm gonna chug this La Croix, then we can look at some data.", "The Mountain View office only has almond milk.","Yeah so I matched with that girl on Linkedin.", "Stack Sats." ];
+    var random = Math.floor(Math.random() * compliments.length);
+    var color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," +  Math.floor(Math.random() * 256) + ")";
+    document.getElementById("quote").innerHTML = compliments[random];
+    document.getElementById("bg").style.backgroundColor = color;
+
+}
+changeColor();
+</script>
