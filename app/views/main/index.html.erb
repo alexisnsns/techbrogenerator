@@ -45,7 +45,38 @@ async src="https://platform.twitter.com/widgets.js" charset="utf-8">
 
 <script>
 function changeColor(){
-    var compliments = ["Let me chat with my team and circle back.", "The algorithms won't keep me from meeting the love of my life.", "Just wait until the next halving dude.", "To the Moon!", "Next cycle, the alts are going to moon.", "1 bitcoin = 1 bitcoin.", "SF is dead.", "I love climbing.", "I pivoted from Web3 to AI.", "He left the polycule.", "Did you see Elon's latest tweet?", "I'm gonna chug this La Croix, then we can look at some data.", "The Mountain View office only has almond milk.","Yeah so I matched with that girl on Linkedin.", "Stack Sats." ];
+    var compliments = [
+    "Let me chat with my team and circle back.", 
+    "The algorithms won't keep me from meeting the love of my life.", 
+    "Just wait until the next halving dude.", 
+    "To the Moon!", 
+    "Next cycle, the alts are going to moon.", 
+    "1 bitcoin = 1 bitcoin.", 
+    "SF is dead.", 
+    "I love climbing.", 
+    "I pivoted from Web3 to AI.", 
+    "He left the polycule.", 
+    "Did you see Elon's latest tweet?", 
+    "I'm gonna chug this La Croix, then we can look at some data.", 
+    "The Mountain View office only has almond milk.",
+    "Yeah so I matched with that girl on Linkedin.", 
+    "Stack Sats.",
+    "Time for a thread!", 
+    "Allbirds are so passé.",
+    "Could you check my PR?",
+    "Miami is the new SF.",
+    "Rent is insane here.",
+    "You should check my merch.",
+    "Bro you really should charge for this.",
+    "Burning man has become too commercial.",
+    "SF is so  f*****g back.",
+    "Did you try thinking outside the box?",
+    "Synergy.",
+    "Back to the drawing board.",
+    "I'll loop you in.",
+    "Touch base.",
+    "Low-hanging fruit."
+    ];
     var random = Math.floor(Math.random() * compliments.length);
     var color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," +  Math.floor(Math.random() * 256) + ")";
     document.getElementById("quote").innerHTML = compliments[random];
